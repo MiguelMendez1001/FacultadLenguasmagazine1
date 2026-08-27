@@ -1,0 +1,119 @@
+header {
+    background-color: white;
+    padding: 35px 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 85;
+    border: 3px solid black;
+    
+}
+
+body {
+    background-color: azure;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav.sticky-menu {
+    background-color: #1a2a6c;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+nav.sticky-menu section {
+    position: relative;
+}
+
+nav.sticky-menu h2, 
+nav.sticky-menu h3 {
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav.sticky-menu h2:hover,
+nav.sticky-menu h3:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* Submenús ocultos por defecto */
+nav.sticky-menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 200;
+    list-style: none;
+}
+
+/* Mostrar submenú al hacer hover sobre la sección */
+nav.sticky-menu section:hover ul {
+    display: block;
+}
+
+nav.sticky-menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #1a2a6c;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+nav.sticky-menu ul li a:hover {
+    background-color: #f0f0ff;
+}
+
+/* === MAIN (Contenido) === */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 6px solid #1a2a6c;
+    scroll-margin-top: 100px;
+}
+
+main section h2, main section h3 {
+    color: #1a2a6c;
+    margin-bottom: 15px;
+}
+
+main section p {
+    color: #555;
+    font-size: 1.05rem;
+}
+
+
+
+footer p{
+        color: black;
+        margin: 7px 0;
+        font-size: 14px;
+    }
