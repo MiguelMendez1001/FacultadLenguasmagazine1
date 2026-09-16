@@ -11,14 +11,14 @@ header {
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(136, 235, 194);
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 nav.sticky-menu {
-    background-color: #1a2a6c;
+    background-color: #1da365;
     padding: 15px 20px;
     display: flex;
     justify-content: space-around;
@@ -35,8 +35,9 @@ nav.sticky-menu section {
     position: relative;
 }
 
-nav.sticky-menu h2, 
-nav.sticky-menu h3 {
+nav.sticky-menu h2,
+nav.sticky-menu h3, 
+nav.sticky-menu h4 {
     color: white;
     font-size: 1.1rem;
     cursor: pointer;
@@ -46,7 +47,8 @@ nav.sticky-menu h3 {
 }
 
 nav.sticky-menu h2:hover,
-nav.sticky-menu h3:hover {
+nav.sticky-menu h3:hover,
+nav.sticky-menu h4:hover {
     background-color: rgba(255,255,255,0.15);
 }
 
