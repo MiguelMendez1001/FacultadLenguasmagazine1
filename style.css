@@ -112,45 +112,43 @@ main section p {
     font-size: 1.05rem;
 }
 
-/* 1. EL CONTENEDOR VENTANA */
-main .carrusel-ventana {
-  width: 100%;             /* Ocupa el ancho disponible dentro del h3 */
-  overflow: hidden;        /* OCULTA todo lo que se salga de sus bordes */
-  white-space: nowrap;     /* OBLIGA a que todos los nombres estén en UNA sola línea */
+/* 1. CONTENEDOR PRINCIPAL */
+#Nuestros-colaboradores .carrusel-ventana {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   box-sizing: border-box;
 }
 
-/* 2. LA CINTA QUE CONTIENE LOS NOMBRES */
-main .carrusel-cinta {
-  display: inline-block;   /* Se comporta como una tira continua de texto */
-  padding-left: 100%;      /* Hace que el texto empiece afuera, a la derecha de la pantalla */
-}
-
-/* 3. ESPACIADO ENTRE CADA NOMBRE */
-main .carrusel-cinta span {
+/* 2. CINTA ANIMADA */
+#Nuestros-colaboradores .carrusel-cinta {
   display: inline-block;
-  margin-right: 40px;      /* Espacio entre un nombre y otro */
-}
-
-/* 1. DEFINIMOS LA ANIMACIÓN */
-main @keyframes .moverCarrusel {
-  0% {
-    transform: translateX(0);        /* Empieza en la posición inicial (fuera a la derecha por el padding-left) */
-  }
-
-  100% {
-    transform: translateX(-100%);    /* Se desplaza completamente hacia la izquierda */
-  }
-}
-
-
-/* 2. APLICAMOS LA ANIMACIÓN A LA CINTA */
-main .carrusel-cinta {
-  display: inline-block;
+  white-space: nowrap;
   padding-left: 100%;
   
-  /* Agregamos esta línea a lo que ya tenías */
+  /* Aplicamos la animación */
   animation: moverCarrusel 15s linear infinite;
+}
+
+/* 3. ESTILO DEL H3 Y LOS NOMBRES */
+#Nuestros-colaboradores .carrusel-cinta h3 {
+  display: inline-block;
+  margin: 0; /* Elimina márgenes por defecto del h3 */
+}
+
+#Nuestros-colaboradores .carrusel-cinta span {
+  display: inline-block;
+  margin-right: 40px; /* Separación entre autores */
+}
+
+/* 4. ANIMACIÓN DE DERECHA A IZQUIERDA */
+@keyframes moverCarrusel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 footer p{
