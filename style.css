@@ -132,7 +132,24 @@ main carrusel-cinta span {
   margin-right: 40px;      /* Espacio entre un nombre y otro */
 }
 
+/* 1. DEFINIMOS LA ANIMACIÓN */
+@keyframes main moverCarrusel {
+  0% {
+    transform: translateX(0);        /* Empieza en la posición inicial (fuera a la derecha por el padding-left) */
+  }
+  100% {
+    transform: translateX(-100%);    /* Se desplaza completamente hacia la izquierda */
+  }
+}
 
+/* 2. APLICAMOS LA ANIMACIÓN A LA CINTA */
+main carrusel-cinta {
+  display: inline-block;
+  padding-left: 100%;
+  
+  /* Agregamos esta línea a lo que ya tenías */
+  animation: moverCarrusel 15s linear infinite;
+}
 
 footer p{
         color: black;
