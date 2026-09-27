@@ -133,7 +133,7 @@ main carrusel-cinta span {
 }
 
 /* 1. DEFINIMOS LA ANIMACIÓN */
-main moverCarrusel {
+main @keyframes moverCarrusel {
   0% {
     transform: translateX(0);        /* Empieza en la posición inicial (fuera a la derecha por el padding-left) */
   }
