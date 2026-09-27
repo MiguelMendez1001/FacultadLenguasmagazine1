@@ -89,7 +89,7 @@ nav.sticky-menu ul li a:hover {
 #Nuestros-colaboradores {
   display: block;
   width: 100%;
-  background-color: transparent; /* O el color de fondo de tu página */
+  background-color: black; /* O el color de fondo de tu página */
 }
 
 /* 2. La ventana contenedora */
