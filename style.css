@@ -85,69 +85,45 @@ nav.sticky-menu ul li a:hover {
     background-color: #f0f0ff;
 }
 
-/* === MAIN (Contenido) === */
-main {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* 1. Aseguramos color y visibilidad en la sección */
+#Nuestros-colaboradores {
+  display: block;
+  width: 100%;
+  background-color: transparent; /* O el color de fondo de tu página */
 }
 
-main section {
-    background: white;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    border-left: 6px solid #1a2a6c;
-    scroll-margin-top: 100px;
-}
-
-main section h2, main section h3 {
-    color: #1a2a6c;
-    margin-bottom: 15px;
-}
-
-main section p {
-    color: #555;
-    font-size: 1.05rem;
-}
-
-/* 1. CONTENEDOR PRINCIPAL */
+/* 2. La ventana contenedora */
 #Nuestros-colaboradores .carrusel-ventana {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  box-sizing: border-box;
+  position: relative;
+  padding: 10px 0;
 }
 
-/* 2. CINTA ANIMADA */
+/* 3. La cinta con animación directa */
 #Nuestros-colaboradores .carrusel-cinta {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%;
-  
-  /* Aplicamos la animación */
-  animation: moverCarrusel 15s linear infinite;
+  animation: desplazarIzquierda 10s linear infinite;
 }
 
-/* 3. ESTILO DEL H3 Y LOS NOMBRES */
-#Nuestros-colaboradores .carrusel-cinta h3 {
-  display: inline-block;
-  margin: 0; /* Elimina márgenes por defecto del h3 */
-}
-
+/* 4. Estilos visuales de los nombres (Aseguramos que sean visibles) */
 #Nuestros-colaboradores .carrusel-cinta span {
   display: inline-block;
-  margin-right: 40px; /* Separación entre autores */
+  font-size: 1.2rem;       /* Tamaños visibles */
+  font-weight: bold;
+  color: #333333;          /* FORZAMOS color oscuro para descartar texto invisible */
+  margin-right: 50px;      /* Separación entre cada persona */
 }
 
-/* 4. ANIMACIÓN DE DERECHA A IZQUIERDA */
-@keyframes moverCarrusel {
-  0% {
-    transform: translateX(0);
+/* 5. Animación simplificada de 0% a -50% */
+@keyframes desplazarIzquierda {
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(-50%);
   }
 }
 
