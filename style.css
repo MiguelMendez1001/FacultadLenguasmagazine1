@@ -133,14 +133,16 @@ main carrusel-cinta span {
 }
 
 /* 1. DEFINIMOS LA ANIMACIÓN */
-@keyframes main moverCarrusel {
+main moverCarrusel {
   0% {
     transform: translateX(0);        /* Empieza en la posición inicial (fuera a la derecha por el padding-left) */
   }
+
   100% {
     transform: translateX(-100%);    /* Se desplaza completamente hacia la izquierda */
   }
 }
+
 
 /* 2. APLICAMOS LA ANIMACIÓN A LA CINTA */
 main carrusel-cinta {
