@@ -113,7 +113,7 @@ main section p {
 }
 
 /* 1. EL CONTENEDOR VENTANA */
-main carrusel-ventana {
+main .carrusel-ventana {
   width: 100%;             /* Ocupa el ancho disponible dentro del h3 */
   overflow: hidden;        /* OCULTA todo lo que se salga de sus bordes */
   white-space: nowrap;     /* OBLIGA a que todos los nombres estén en UNA sola línea */
@@ -121,19 +121,19 @@ main carrusel-ventana {
 }
 
 /* 2. LA CINTA QUE CONTIENE LOS NOMBRES */
-main carrusel-cinta {
+main .carrusel-cinta {
   display: inline-block;   /* Se comporta como una tira continua de texto */
   padding-left: 100%;      /* Hace que el texto empiece afuera, a la derecha de la pantalla */
 }
 
 /* 3. ESPACIADO ENTRE CADA NOMBRE */
-main carrusel-cinta span {
+main .carrusel-cinta span {
   display: inline-block;
   margin-right: 40px;      /* Espacio entre un nombre y otro */
 }
 
 /* 1. DEFINIMOS LA ANIMACIÓN */
-main @keyframes moverCarrusel {
+main @keyframes .moverCarrusel {
   0% {
     transform: translateX(0);        /* Empieza en la posición inicial (fuera a la derecha por el padding-left) */
   }
@@ -145,7 +145,7 @@ main @keyframes moverCarrusel {
 
 
 /* 2. APLICAMOS LA ANIMACIÓN A LA CINTA */
-main carrusel-cinta {
+main .carrusel-cinta {
   display: inline-block;
   padding-left: 100%;
   
